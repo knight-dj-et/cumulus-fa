@@ -1,0 +1,392 @@
+.folder-list {
+	.folder {
+		padding-left: 8px;
+		padding-top:4px;
+
+		.folder-head {
+			&.collapsed {
+				.glyphicon-folder-close {
+
+				}
+
+				.glyphicon-folder-open {
+					display:none;
+				}
+
+				~ .children {
+				  display:none;
+				}
+			}
+
+			&.expanded {
+				.glyphicon-folder-close {
+					display:none;
+				}
+
+				.glyphicon-folder-open {
+
+				}
+
+				~ .children {
+
+				}
+			}
+
+			.folder-name {
+				padding-left:0.5em;
+				font-size: 16px;
+			}
+
+			.folder-icon {
+				color: lighten(black, 50%);
+			}
+		}
+	}
+
+	>.folder{
+		padding-left: 0px;
+		padding-top: 0px;
+		cursor:pointer;
+	}
+}
+.detail-box .well{
+  min-height:200px;
+}
+
+.counts {
+  padding-top:15px;
+}
+.counts span {
+    display:block;
+    padding:0;
+}
+.counts span.count {
+    font-size:28px;
+}
+
+.email-details div,.modify-details div {
+  margin-bottom:5px;
+  font-style:italic;
+}
+
+.email-details h5, .modify-details h5{
+  font-size:90%;
+  font-weight:bold;
+  margin:0;
+	font-style:normal;
+}
+
+.tracking-detail{
+  font-size:75%;
+  font-weight:700;
+  text-decoration:underline;
+}
+
+.vertical-tabs .nav.nav-stacked {
+
+    max-width: 300px;
+    width:20%;
+    float:left;
+}
+
+.vertical-tabs .tab-content {
+    position:relative;
+    float:left;
+    padding-left: 1em;
+}
+
+.scrollPaneClientLookup {
+    width: 860px;
+    height: 400px;
+    padding: 25px;
+    border: 2px solid gray;
+    margin: 30px;
+}
+
+#myContactsPanel {
+  overflow-y:scroll;
+}
+
+.list-group-item {
+    border:0;
+    padding:0px;
+}
+
+.retirement-img {
+   margin-right: 100px;
+   margin-bottom: 50px;
+}
+
+.searchbar {
+	margin-bottom: 20px;
+}
+
+.linkAlignMobile {
+	margin-right: 30px;
+}
+
+.subscriber-overview {
+  position:relative;
+}
+
+#subscriber-buttons {
+  position: absolute;
+  bottom:10px;
+  right:25px;
+}
+
+.action {
+  margin-right:8px;
+}
+
+.email-preview {
+  margin-bottom:15px;
+}
+
+.checkLst{
+    label {
+    	font-weight:normal;
+    	div.item {
+    		padding-left:4px;
+    	}
+    }
+}
+.item {
+    display:inline-block;
+    vertical-align: top;
+    width:350px;
+}
+
+.itemInner {
+    font-size: x-small;
+}
+
+
+.actions {
+    display:inline-block;
+
+}
+
+.listsSubsMainContent {
+	.members {
+		height: 615px;
+		overflow: auto;
+	}
+
+	.group-btns {
+		padding:4px;
+
+		.btn, input[type=text]{
+			width:100%;
+
+		}
+	}
+
+	.col {
+		padding-left:25px;
+		padding-right:25px;
+
+		&.btn-col {
+			.row{
+				padding-top:4px;
+				.btn {
+					width:100%;
+				}
+			}
+		}
+	}
+}
+
+.wiz-btn {
+	padding: 0.5em 0.5em 0 0;
+}
+
+.list-column {
+    border-top: none!important;
+}
+
+.list-group-item {
+    border:0;
+    padding:0px;
+}
+
+.divider {
+	margin: 20px 0 20px;
+}
+
+.staticValue {
+	color: black;
+	font-weight: bold;
+}
+
+.date-created {
+	float: left;
+	padding-right: 30px;
+}
+
+.btn-spc {
+	margin: 5px;
+}
+
+/*.sub-list-name {
+	margin-right: 20px;
+}*/
+
+.crop {
+    width: 1200px;
+    height: 800px;
+    overflow: hidden;
+}
+
+.crop img {
+    width: 1200px;
+    height: 800px;
+    margin: -75px 0 0 -100px;
+}
+
+.preview {
+	margin: 20px;
+}
+
+.itemLst {
+	.lbl {
+		/* Hack to force fixed width columns */
+		width: 330px;
+	}
+	label {
+		width:100%;
+	}
+	.row {
+		div {
+			padding-right:20px;
+		}
+	}
+}
+
+.list-header {
+    border-top: none!important;
+	color: black;
+	font-weight: bold;
+}
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+.image-preview {
+	img {
+		max-width:80px;
+		max-height:80px;
+	}
+}
+
+.disabledColor {
+	color : #D3D3D3;
+}
+
+.zero-padding {
+	&>.col-md-6{
+		padding-left:0px;
+		padding-right:0px;
+	}
+}
+.listBoxNoChecks input[type=checkbox] {
+     display:none;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+.titlebar{
+	&.navbar {
+		min-height:0;
+	}
+	margin: -19px -19px 19px -19px;
+	padding: 10px;
+	&> h4{
+		margin:0;
+		padding:0;
+		color:white;
+		font-weight: bold;
+	}
+}
+
+.pageTitle {
+	& h2 {
+		margin:0;
+		padding: 0;
+		line-height: 30px;
+	}
+	padding: 20px inherit;
+}
+
+.modal-title {
+  color: #fff !important;
+}
+
+.clientManagePanel .itemList {
+	max-height:862px;
+	overflow:scroll;
+}
+
+.editable-list-content {
+	max-height: 650px;
+	overflow-y: scroll;
+	overflow-x: visible;
+	padding-left:25px;
+	padding-right:25px;
+}
+
+.client-list {
+	max-height: 800px;
+	overflow-y: scroll;
+}
+
+.selectableEmailDivs {
+	&.active{
+		.selected-indicator {
+			display:inline;
+		}
+	}
+
+	.selected-indicator{
+		display: none;
+	}
+}
+
+.radio-list{
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+
+#sendModal {
+	.progress-bar {
+		width: 5%;
+	}
+
+	&+.onDone {
+		visibility: hidden;
+	}
+}
+
+#btnSend {
+	display: none;
+}
