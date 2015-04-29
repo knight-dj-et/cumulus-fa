@@ -33,5 +33,5 @@ gulp.task('images', function () {
 
 gulp.task('deploy', function() {
   gulp.src('./build/**/*.*')
-	.pipe(gulp.dest('./heroku'));
+	.pipe(gulp.dest('./cumulus-fa'));
 });
