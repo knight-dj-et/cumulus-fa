@@ -225,7 +225,7 @@ var EmailSelect = React.createClass({
 		PubSub.unsubscribe( this.subscriptions['Folder-Selected'] );
 	},
     getInitialState: function(){
-		return { FolderName: "Retirement" };
+		return { FolderName: "Financial Services" };
     },
     render: function() {
     	var searchStyle = {'padding-top':'10px;'};

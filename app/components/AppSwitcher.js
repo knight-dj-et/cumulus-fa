@@ -54,7 +54,7 @@ var AppSwitcher = React.createClass({
       <div className="container-fluid">
         <div className="navbar-header pull-right">
           <a className="navbar-brand" href="#">
-            <img src="./images/ms-logo.png" />
+            <img src="./images/cumulus-logo-02.png" />
           </a>
         </div>
         <div className="pull-right">

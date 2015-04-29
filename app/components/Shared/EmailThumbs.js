@@ -16,7 +16,7 @@ var EmailThumbs = React.createClass({
 	getInitialState: function() {
 		return {
 			selectedId: null,
-			folder: 7,
+			folder: 1,
 			thumbs: thumbs,
 			searchMode: false,
 			searchTerm: ''
@@ -85,7 +85,7 @@ var EmailThumbs = React.createClass({
   			thumbList = this.state.thumbs.filter(function(t){
   				return t.folder === that.state.folder;
   			}).filter(function(t){
-  				return types.length === 0 || types.indexOf(t.type) != -1;
+  				return types.length === 0 || (t.type || []).some(function(tp){return types.indexOf(tp) != -1});
   			});
 		} else {
   			thumbList = that.state.thumbs.filter(function(t){
@@ -106,7 +106,7 @@ var EmailThumbs = React.createClass({
           </div>
           <div className="row emailThumbImg">
             <div className="col-md-12">
-              <img className="img-responsive" id={t.id} src={imgPath + t.previewImage} height="220" width="200" />
+              <img className="img-responsive" id={t.id} src={imgPath + t.previewImage} />
             </div>
           </div>
           <div className="row emailThumbActions">
