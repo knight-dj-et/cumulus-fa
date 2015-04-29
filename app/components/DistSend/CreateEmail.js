@@ -392,7 +392,7 @@ var EmailSelect = React.createClass({
     	for (var i=0; i<emails.length; i++) {
     		assocEmails[ emails[i].id ] = emails[i];
     	}
-		return { FolderName: "Retirement", oEmails: assocEmails, selectedEmail:null };
+		return { FolderName: "Financial Services", oEmails: assocEmails, selectedEmail:null };
     },
     render: function() {
     	var searchStyle = {'padding-top':'10px;'};
