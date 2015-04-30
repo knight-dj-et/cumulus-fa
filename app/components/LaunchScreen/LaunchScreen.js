@@ -39,7 +39,7 @@ var LaunchScreen = React.createClass({
     return (
       <div>
 				<div className="col-md-8 col-md-offset-2 launcher text-center">
-          <h1>FA Communicator</h1>
+          <h1>Distributed Marketing Client</h1>
 					<Link to="dashboard" >
             <div className="s1icon s1icon-xxl s1icon-s-dashboard"></div>
             <div className="text">Dashboard</div>
