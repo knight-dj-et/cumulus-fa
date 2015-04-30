@@ -38,7 +38,7 @@ var LaunchScreen = React.createClass({
   render: function() {
     return (
       <div>
-				<div className="col-md-8 col-md-offset-2 launcher text-center">
+				<div className="col-md-10 col-md-offset-1 launcher text-center">
           <h1>Distributed Marketing Client</h1>
 					<Link to="dashboard" >
             <div className="s1icon s1icon-xxl s1icon-s-dashboard"></div>
